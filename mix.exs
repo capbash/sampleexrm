@@ -3,7 +3,7 @@ defmodule Sampleexrm.Mixfile do
 
   def project do
     [app: :sampleexrm,
-     version: "0.0.1",
+     version: "0.0.2",
      elixir: "~> 1.0",
      deps: deps]
   end
@@ -28,6 +28,8 @@ defmodule Sampleexrm.Mixfile do
   #
   # Type `mix help deps` for more examples and options
   defp deps do
-    []
+    [
+      {:exrm, "~> 0.14.13"}
+    ]
   end
 end
