@@ -10,7 +10,7 @@ defmodule Sampleexrm.Server do
   end
 
   def handle_call(:ping, _from, state) do
-    {:reply, "Sample EXRM 0.0.1 #{state+1}", state+1}
+    {:reply, "Sample EXRM #{Bashdocs.Mixfile.project[:version]} #{state+1}", state+1}
   end
 end
 
