@@ -2,7 +2,7 @@ defmodule Sampleexrm.Server do
   use GenServer
 
   def start_link() do
-    :gen_server.start_link({:local, :sampleexrm}, __MODULE__, [], [])
+    GenServer.start_link(__MODULE__, [], name: :sampleexrm)
   end
 
   def init([]) do
@@ -10,7 +10,7 @@ defmodule Sampleexrm.Server do
   end
 
   def handle_call(:version, _from, state) do
-    { :reply, "0.0.5", state}
+    { :reply, "0.0.6", state}
   end
 
 end
