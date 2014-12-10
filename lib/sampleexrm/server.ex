@@ -10,7 +10,7 @@ defmodule Sampleexrm.Server do
   end
 
   def handle_call(:version, _from, state) do
-    { :reply, "0.0.4", state}
+    { :reply, "0.0.5", state}
   end
 
 end
